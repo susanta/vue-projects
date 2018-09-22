@@ -2,6 +2,15 @@
   <div id="app">
     <h1>{{ title }}</h1>
     <navbar />
+    <nav>
+      <ul>
+            <li>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </nav>
   </div>
 </template>
 
