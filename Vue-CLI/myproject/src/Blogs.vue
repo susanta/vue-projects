@@ -3,7 +3,7 @@
         <h2>blogs</h2>
         <div v-for="post in posts" :key="post.id">
             <h3>{{ post.title }}</h3>
-            <p>{{ post.body }}</p>
+            <p>{{ post.body  | snippet }}</p>
         </div>
     </div>
 </template>
@@ -26,9 +26,9 @@ export default {
         .then(response => {
             // console.log(response)
             this.posts = response.data
-        }).catch(err) {
+        }).catch(err => {
             console.log(err)
-        }
+        })
     }
 }
 </script>
